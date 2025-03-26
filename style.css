@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav {
+    background-image: url('salmon-nav.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.book-now {
+    background-color: #930000;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.hero {
+    background-image: url('salmon.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text {
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 50%;
+}
+
+.explore-menus {
+    background-color: #930000;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.about-us {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px;
+    background-color: rgb(250, 246, 246);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f9a825;
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
+}
+
+.booking-process .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+}
+
+.booking-process .left-section img {
+    width: 100%;
+    height: auto;
+    transform: none;
+    object-fit: cover;
+}
+
+.booking-process .content {
+    max-width: 100%;
+    text-align: center;
+}
+
+.booking-process .bottom-section {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+
+@media (max-width: 1024px) {
+    .hero {
+        height: 400px;
+    }
+
+    .hero-text {
+        max-width: 70%;
+        padding: 30px;
+    }
+
+    .about-us {
+        padding: 30px;
+    }
+
+    .booking-process .container {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero-text {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .about-us {
+        padding: 20px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .explore-menus {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .stats {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
